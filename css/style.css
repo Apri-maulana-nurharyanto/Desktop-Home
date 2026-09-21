@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .top, .content .center, .content .bottom {
+  width: 100%;
+  height: 100%;
+}
+
+.content .bottom .date-time {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 30px;
+  color: #000;
+}
+
+#time {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#date {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  #bg-video {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: 25% center;
+  }
+  .date-time {
+    padding: 10px;
+  }
+  #date {
+    font-size: 16px;
+  }
+  #time {
+    font-size: 20px;
+  }
+}
