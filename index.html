@@ -18,16 +18,49 @@
       <source src="src/video/1000350225.mp4" type="video/mp4" />
     </video>
     <div class="content">
-      <div class="top"></div>
+      <div class="top">
+        <div class="info">
+          <h1>Kurokawa Akane</h1>
+          <h2>黒川あかね</h2>
+        </div>
+        <div class="source">
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search Google or type a URL" />
+            <button class="btn-search" id="searchBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="center"></div>
       <div class="bottom">
         <div class="date-time">
           <div id="date"></div>
           <div id="time"></div>
         </div>
-        <div class="apk-list"></div>
+        <div class="apk-list">
+          <a href="https://web.whatsapp.com/" class="apk" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.youtube.com/" class="apk" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="apk" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/id-ID/" class="apk" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
       </div>
     </div>
   </body>
+  <script
+    src="https://kit.fontawesome.com/91d929946f.js"
+    crossorigin="anonymous"></script>
   <script src="js/date-time.js"></script>
+  <script src="js/search-engine.js"></script>
 </html>
