@@ -151,10 +151,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  * {
-    font-family: "Audiowide", sans-serif;
-  }
-
   #bg-video {
     width: 100vw;
     height: 100vh;
@@ -204,6 +200,7 @@ body {
   .content .top .source {
     width: 100%;
     padding: 0 10px;
+    font-family: sans-serif;
   }
 
   .content .bottom .date-time {
@@ -212,6 +209,7 @@ body {
     width: 100%;
     align-items: center;
     padding-top: 20px;
+    font-family: "Audiowide", sans-serif;
   }
 
   .content .bottom .date-time #time {
