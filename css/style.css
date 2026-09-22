@@ -164,17 +164,36 @@ body {
     object-position: 25% center;
   }
 
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
   .content .top,
   .content .center,
   .content .bottom {
     padding: 10px;
+    height: auto;
+  }
+
+  .content .bottom {
+    order: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   .content .top {
+    order: 2;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: start;
+  }
+
+  .content .center {
+    order: 3;
+    flex: 1;
   }
 
   .content .top .info {
@@ -187,23 +206,17 @@ body {
     padding: 0 10px;
   }
 
-  .content .bottom {
-    order: -1;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
   .content .bottom .date-time {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .content .bottom .date-time #time {
     font-size: 50px;
+    line-height: 1;
   }
 
   .content .bottom .date-time #date {
