@@ -1,20 +1,21 @@
-const searchInput = document.getElementById('searchInput');
-        const searchBtn = document.getElementById('searchBtn');
+const searchInput = document.getElementById("searchInput");
+const searchBtn = document.getElementById("searchBtn");
 
-        function cariGoogle() {
-            const query = searchInput.value.trim();
-            if (query !== "") {
-                const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-                window.open(url, '_blank');
-            }
-        }
+function cariGoogle() {
+  const query = searchInput.value.trim();
+  if (query !== "") {
+    const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+    window.open(url, "_blank");
+    searchInput.value = ""; // Tambahkan baris ini untuk mengosongkan input
+  }
+}
 
-        // Jalankan saat icon search diklik
-        searchBtn.addEventListener('click', cariGoogle);
+// Jalankan saat icon search diklik
+searchBtn.addEventListener("click", cariGoogle);
 
-        // Opsional: Jalankan juga saat menekan tombol Enter
-        searchInput.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                cariGoogle();
-            }
-        });
+// Opsional: Jalankan juga saat menekan tombol Enter
+searchInput.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    cariGoogle();
+  }
+});
