@@ -28,12 +28,18 @@
             <input
               type="text"
               id="searchInput"
-              placeholder="Search Google or type a URL" />
+              placeholder="Search Google or type a URL"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Search Google or type a URL'" />
             <button class="btn-search" id="searchBtn">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
           <div class="bookmarks">
+            <a href="" class="tab" target="_blank">
+              <i class="fa-solid fa-robot"></i>
+              <p>Gemini AI</p>
+            </a>
             <a
               href="https://hok-ace-translate-id.netlify.app/"
               class="tab"
