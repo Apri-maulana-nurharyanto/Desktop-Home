@@ -34,12 +34,16 @@ a {
   align-items: center;
   width: 100%;
   max-width: 584px;
-  height: 44px;
+  height: 55px;
   background: #fff;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   padding: 0 15px;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-box:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.58);
 }
 
 .search-box input {
@@ -91,7 +95,7 @@ a {
   flex-direction: column;
   align-items: end;
   justify-content: start;
-  gap: 30px;
+  gap: 20px;
 }
 
 .content .top .source .bookmarks {
@@ -100,7 +104,7 @@ a {
   display: flex;
   justify-content: end;
   align-items: start;
-  gap: 10px;
+  gap: 20px;
 }
 
 .content .top .source .bookmarks .tab {
@@ -113,12 +117,15 @@ a {
 }
 
 .content .top .source .bookmarks .tab:hover {
-  font-size: 40px;
+  font-size: 35px;
+  margin: 0 2px;
   transition: 0.3s;
 }
 
 .content .top .source .bookmarks .tab p {
-  font-size: 14px;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 
 .content .top .info {
@@ -183,6 +190,7 @@ a {
 .apk-list .apk:hover {
   transform: scale(1.2);
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
