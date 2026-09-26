@@ -12,6 +12,11 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 #bg-video {
   position: fixed;
   top: 0;
@@ -83,7 +88,37 @@ body {
 .content .top .source {
   width: 50%;
   display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  gap: 30px;
+}
+
+.content .top .source .bookmarks {
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: end;
+  align-items: start;
+  gap: 10px;
+}
+
+.content .top .source .bookmarks .tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 30px;
+  transition: .3s;
+}
+
+.content .top .source .bookmarks .tab:hover {
+  font-size: 40px;
+  transition: .3s;
+}
+
+.content .top .source .bookmarks .tab p {
+  font-size: 14px;
 }
 
 .content .top .info {
@@ -147,7 +182,7 @@ body {
 
 .apk-list .apk:hover {
   transform: scale(1.2);
-  transition: 0.3s;
+  transition: .3s;
 }
 
 @media (max-width: 767px) {
