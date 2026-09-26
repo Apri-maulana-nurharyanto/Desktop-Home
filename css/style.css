@@ -247,6 +247,24 @@ a {
     font-family: sans-serif;
   }
 
+  .content .top .source .bookmarks {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .content .top .source .bookmarks .tab {
+    font-size: 25px;
+  }
+
+  .content .top .source .bookmarks .tab:hover {
+    font-size: 30px;
+  }
+
+  .content .top .source .bookmarks .tab p {
+    font-size: 8px;
+  }
+
   .content .bottom .date-time {
     display: flex;
     flex-direction: column-reverse;
